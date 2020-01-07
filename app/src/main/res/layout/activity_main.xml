@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Blue_dark"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="411dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="top"
+        android:orientation="vertical"
+        android:weightSum="4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.76"
+        tools:layout_editor_absoluteX="52dp">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1.0"
+            android:background="@color/Primary2"
+            android:clickable="true"
+            android:fadingEdge="horizontal|vertical"
+            android:fadingEdgeLength="100dp"
+            android:text="I saw this!"
+            android:textAlignment="center"
+            android:textColor="@color/Tertiary1"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1.0"
+            android:background="@color/Primary2"
+            android:clickable="true"
+            android:fadingEdge="horizontal|vertical"
+            android:fadingEdgeLength="100dp"
+            android:text="Show me something noice!"
+            android:textAlignment="center"
+            android:textColor="@color/Tertiary1"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1.0"
+            android:background="@color/Primary2"
+            android:clickable="true"
+            android:fadingEdge="horizontal|vertical"
+            android:fadingEdgeLength="100dp"
+            android:text="Who knows?"
+            android:textAlignment="center"
+            android:textColor="@color/Tertiary1"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1.0"
+            android:background="@color/Primary2"
+            android:clickable="true"
+            android:fadingEdge="horizontal|vertical"
+            android:fadingEdgeLength="100dp"
+            android:text="!?!?!"
+            android:textAlignment="center"
+            android:textColor="@color/Tertiary1"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TimePod v0.1"
+        android:textColor="@color/Secondary1"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="114dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pod" />
+
+</android.support.constraint.ConstraintLayout>
