@@ -9,17 +9,15 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="match_parent"
-        android:layout_height="411dp"
-        android:layout_marginTop="50dp"
+        android:layout_width="416dp"
+        android:layout_height="512dp"
         android:layout_marginBottom="8dp"
         android:gravity="top"
         android:orientation="vertical"
-        android:weightSum="4"
+        android:weightSum="5"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.76"
-        tools:layout_editor_absoluteX="52dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
         <Button
             android:id="@+id/button1"
@@ -95,6 +93,26 @@
             android:fadingEdge="horizontal|vertical"
             android:fadingEdgeLength="100dp"
             android:text="!?!?!"
+            android:textAlignment="center"
+            android:textColor="@color/Tertiary1"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <Button
+            android:id="@+id/button_suggest"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="0.5"
+            android:background="@color/Primary2"
+            android:clickable="true"
+            android:fadingEdge="horizontal|vertical"
+            android:fadingEdgeLength="100dp"
+            android:text="Suggest something!"
             android:textAlignment="center"
             android:textColor="@color/Tertiary1"
             android:textSize="19sp"

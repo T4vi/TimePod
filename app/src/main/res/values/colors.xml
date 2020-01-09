@@ -10,4 +10,5 @@
     <color name="Tertiary1">#CA773B</color>
     <color name="Secondary2">#C4A063</color>
     <color name="GreenHilight">#82EE6F</color>
+    <color name="GreenHilight_dim">#40AA2B</color>
 </resources>

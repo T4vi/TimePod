@@ -1,7 +1,10 @@
 package com.example.timepod;
 
 import android.app.ActivityOptions;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.net.Uri;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.ActivityOptionsCompat;
 import android.support.v7.app.AppCompatActivity;
@@ -20,8 +23,10 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
 public class MainActivity extends AppCompatActivity {
+    public static final String MY_PREFS_NAME = "MyPrefsFile";
 
-
+//    private SharedPreferences sharedPref = getSharedPreferences(MY_PREFS_NAME, Context.MODE_PRIVATE);
+//    private SharedPreferences.Editor editor = sharedPref.edit();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
         button_sawthis.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, TimeViewActivity.class);
+                //intent.putExtra("editor", editor);
 
                 @SuppressWarnings("unchecked")
                 ActivityOptionsCompat activityOptions = ActivityOptionsCompat.makeSceneTransitionAnimation(MainActivity.this);
@@ -62,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
         Button button_question = (Button) findViewById(R.id.button3);
         button_question.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "Suggest more features", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Room for more features! Suggest some!", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -74,6 +80,15 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity.this, ImageView_Activity.class);
                 ActivityOptionsCompat activityOptions = ActivityOptionsCompat.makeBasic();
                 ActivityCompat.startActivity(MainActivity.this, intent, activityOptions.toBundle());
+            }
+        });
+
+        Button button_suggest = findViewById(R.id.button_suggest);
+        button_suggest.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://docs.google.com/spreadsheets/d/1eAYnUqYMAc2QcORl0nOl873jOX0xJeADs755EBYKsSU/edit?usp=sharing"));
+                startActivity(browserIntent);
             }
         });
 
